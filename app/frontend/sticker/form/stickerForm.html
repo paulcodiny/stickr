@@ -1,0 +1,8 @@
+<form name="stickerForm" class="form-sticker" ng-controller="StickerFormCtrl" ng-submit="createSticker()">
+    <input type="text" name="title" class="input-text form-sticker-title" required ng-model="sticker.title" placeholder="Title"><br>
+    <input type="file" name="image" class="input-file form-sticker-image" required ps-image-upload><br>
+
+    <div class="form-actions form-sticker-actions">
+        <input type="submit" class="button-default" value="Upload" ng-disabled="stickerForm.$invalid" />
+    </div>
+</form>

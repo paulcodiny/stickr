@@ -1,0 +1,16 @@
+<div ng-show="photo.fileSrc">
+    <button class="button-default button-new-photo" ng-click="showPhotoUpload()">Start over</button>
+    <div class="photo-main-picture" ps-sticker-droppable droppable-handler="handleDrop" ng-style="{ 'background-image': 'url(' + photo.fileSrc + ')' }">
+        <ul class="photo-main-picture-sticker-list" ng-show="photo.stickers.length">
+            <li class="photo-main-picture-sticker-item" ng-repeat="sticker in photo.stickers">
+                <ps-sticker title="{{sticker.title}}" image="{{sticker.image}}" ps-sticker-attached />
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div ng-show="!photo.fileSrc">
+    <form name="photoForm">
+        <input type="file" name="photoFormFile" ps-image-upload ng-model="photo" />
+    </form>
+</div>

@@ -1,0 +1,89 @@
+@import "reset";
+@import "form";
+@import "common";
+
+@sidebar-width: 150px;
+@sidebar-right-margin: 10px;
+
+html, body {
+  margin: 0 auto;
+  max-width: 1280px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-wrapper {
+  box-sizing: border-box;
+  padding-right: @sidebar-width + @sidebar-right-margin;
+  position: relative;
+}
+
+.photo-content {
+  text-align: center;
+}
+
+.photo-main-picture {
+  background-position: center center;
+  background-size: cover;
+  display: inline-block;
+  height: 600px;
+  position: relative;
+  width: 800px;
+}
+
+.photo-main-sticker {
+  position: absolute;
+
+  .photo-sticker-picture {
+    cursor: auto;
+  }
+}
+
+.button-new-photo {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.sidebar {
+  position: absolute;
+  right: @sidebar-right-margin;
+  top: 0;
+  width: @sidebar-width;
+}
+
+.sidebar-actions {
+  text-align: center;
+}
+
+.button-new-sticker {
+  margin-top: 10px;
+}
+
+.photo-sticker-list-wrapper {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.photo-sticker-list {
+  list-style: none;
+}
+
+.photo-sticker-item {
+  margin-top: 10px;
+}
+
+.photo-sticker-picture {
+  .text-overflow-ellipsis();
+
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 20px 0 rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  cursor: move;
+  display: inline-block;
+  height: 150px;
+  line-height: 20px;
+  padding: 0 10px;
+  text-align: center;
+  width: 150px;
+}

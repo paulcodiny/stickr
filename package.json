@@ -1,0 +1,28 @@
+{
+  "name": "photo-sticker-app",
+  "version": "0.0.1",
+  "description": "Technical assignment",
+  "author": {
+    "name": "Pavlik Kiselev",
+    "email": "paulcodiny@gmail.com>"
+  },
+  "scripts": {
+    "dev": "webpack",
+    "start": "export NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  }
+}
