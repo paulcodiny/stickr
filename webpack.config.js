@@ -9,7 +9,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        home: "./app/frontend/app"
+        app: "./app/frontend/app"
     },
     output: {
         path: __dirname + '/public',

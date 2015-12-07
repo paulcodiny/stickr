@@ -1,11 +1,9 @@
 module.exports = function() {
     /**
+     * Add ability to upload image file via FileReader::readAsDataURL
      * @example <input type="file" name="file" ps-image-upload>
+     *
      * @fires imageUploadDirective.imageUploaded
-     */
-
-    /**
-     * @event imageUploadDirective.imageUploaded
      * @type {object}
      * @property {string} src base64 presentation of the uploaded file
      * @property {jqLite} element input[type=file], i.e. can be cleared next

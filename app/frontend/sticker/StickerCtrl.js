@@ -3,7 +3,7 @@ module.exports = function($scope, StickerService, ModalDialogFactory) {
     $scope.stickers = StickerService.getStickers();
 
     // create modal with form
-    $scope.modal = ModalDialogFactory($scope, require('./form/stickerForm.html'));
+    $scope.modal = ModalDialogFactory(require('./form/stickerForm.html'));
 
     $scope.addStickerToList = function(event, sticker) {
         StickerService.addSticker(sticker);

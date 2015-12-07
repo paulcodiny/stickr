@@ -1,11 +1,9 @@
 let angular = require('angular');
 
 module.exports = function() {
-    let tpl = require('./stickerDirective.html');
-    
     return {
         restrict: 'E',
-        template: tpl,
+        template: require('./stickerDirective.html'),
         scope: {
             title: '@',
             image: '@',

@@ -1,8 +1,8 @@
 module.exports = function() {
     /**
-     * Directive for attaching stickers to photo
-     * create sticker options to attributes top/left and add css class 'photo-main-sticker'
-     * requires sticker object from parent scope with top/left options
+     * Directive for attaching stickers to a photo
+     * Convert sticker options to attributes "top/left" and add a CSS class 'photo-main-sticker'
+     * Requires a sticker object from a parent scope with "top/left" options
      */
     return {
         restrict: 'A',

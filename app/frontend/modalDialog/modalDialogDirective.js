@@ -1,9 +1,7 @@
 module.exports = function() {
-    let tpl = require('./modalDialogDirective.html');
-
     return {
         restrict: 'E',
-        template: tpl,
+        template: require('./modalDialogDirective.html'),
         scope: {
             show: '='
         },
